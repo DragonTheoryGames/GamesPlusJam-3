@@ -116,19 +116,13 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: a7210391fda00795c913661832130006, type: 2}
 --- !u!1 &231947045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1156763546824160060, guid: 58e385e865e3186f39573ab0ab0fe5c1,
-    type: 3}
-  m_PrefabInstance: {fileID: 639270090}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &231947046 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 1156763546824160038, guid: 58e385e865e3186f39573ab0ab0fe5c1,
     type: 3}
   m_PrefabInstance: {fileID: 639270090}
   m_PrefabAsset: {fileID: 0}
@@ -139,6 +133,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1156763546824160038, guid: 58e385e865e3186f39573ab0ab0fe5c1,
+        type: 3}
+      propertyPath: m_AgentTypeID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156763546824160038, guid: 58e385e865e3186f39573ab0ab0fe5c1,
+        type: 3}
+      propertyPath: m_AutoRepath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156763546824160038, guid: 58e385e865e3186f39573ab0ab0fe5c1,
+        type: 3}
+      propertyPath: m_AutoTraverseOffMeshLink
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156763546824160056, guid: 58e385e865e3186f39573ab0ab0fe5c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -198,13 +207,34 @@ PrefabInstance:
         type: 3}
       propertyPath: ghostAgent
       value: 
-      objectReference: {fileID: 231947046}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156763546824160057, guid: 58e385e865e3186f39573ab0ab0fe5c1,
+        type: 3}
+      propertyPath: moveDisPerSec
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156763546824160057, guid: 58e385e865e3186f39573ab0ab0fe5c1,
+        type: 3}
+      propertyPath: ghost
+      value: 
+      objectReference: {fileID: 231947045}
     - target: {fileID: 1156763546824160060, guid: 58e385e865e3186f39573ab0ab0fe5c1,
         type: 3}
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1156763546824160061, guid: 58e385e865e3186f39573ab0ab0fe5c1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156763546824160061, guid: 58e385e865e3186f39573ab0ab0fe5c1,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1156763546824160038, guid: 58e385e865e3186f39573ab0ab0fe5c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 58e385e865e3186f39573ab0ab0fe5c1, type: 3}
 --- !u!1001 &736365519
 PrefabInstance:

@@ -25,38 +25,37 @@ public class EventHandler : MonoBehaviour
                 {
 
                     hitObject = hit.transform.gameObject;
-                    CanTriggerEvent();
+                    TriggerEvent();
 
                 }
             }
         }
     }
 
-    // This will see if we've already triggered this object, and if we can trigger it again (if it's reusable)
-    void CanTriggerEvent()
+    // This will see if we can trigger the event, then trigger the event if we can.
+    void TriggerEvent()
     {
         eventObject = hitObject.GetComponent<EventObject>();
         
         if (eventObject.isReusable == true)
         {
             Debug.Log("Running event!");
+            eventObject.Run();
         }
         else
         {
             if (eventObject.isUsable == true)
             {
                 Debug.Log("Running event!");
+                eventObject.Run();
                 eventObject.isUsable = false;
             }
             else
             {
                 Debug.Log("You cannot run this event again.");
+                return;
             }
         }
     }
 
-    void TriggerEvent()
-    {
-       
-    }
 }

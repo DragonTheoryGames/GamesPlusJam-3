@@ -8,4 +8,5 @@ public class EventObject : MonoBehaviour
     public bool isReusable;
     public bool isUsable;
 
+    public Animation objAnim;
 }

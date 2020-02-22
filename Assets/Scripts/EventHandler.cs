@@ -21,7 +21,7 @@ public class EventHandler : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 // Assign any objects that want to be triggered with the Trigger tag
-                if (hit.transform.tag == "Trigger")
+                if (hit.transform.tag == "EventObject")
                 {
 
                     hitObject = hit.transform.gameObject;

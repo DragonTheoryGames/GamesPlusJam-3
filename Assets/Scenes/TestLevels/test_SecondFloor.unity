@@ -199,12 +199,22 @@ NavMeshAgent:
     type: 3}
   m_PrefabInstance: {fileID: 639270090}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &231947051 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1156763546824160056, guid: 58e385e865e3186f39573ab0ab0fe5c1,
-    type: 3}
-  m_PrefabInstance: {fileID: 639270090}
+--- !u!114 &231947047
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_ObjectHideFlags: 0
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231947045}
+  m_EditorHideFlags: 0
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 35e0f3ea28d8d5a288af64d0ddd82cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ping: {fileID: 8481148887522692470, guid: 50890886c61923e39ad3aca969e60909, type: 3}
+  pingClone: {fileID: 0}
+  destroy: 0
+  pings: 0
 --- !u!1001 &639270090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -300,7 +310,8 @@ PrefabInstance:
         type: 3}
       propertyPath: npcTarget
       value: 
-      objectReference: {fileID: 231947045}
+      objectReference: {fileID: 8481148887522692470, guid: 50890886c61923e39ad3aca969e60909,
+        type: 3}
     - target: {fileID: 9060020325827040207, guid: 66434010d4bbf60dda847e353c39f6f1,
         type: 3}
       propertyPath: m_LocalPosition.x

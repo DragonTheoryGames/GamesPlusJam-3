@@ -10,6 +10,7 @@ public class Agent : MonoBehaviour
     public GameObject npcTemp;
     public NavMeshAgent navMeshAgent;   
     public GameObject ping;
+    private GameObject nullTarget;
     public Transform theAgent;
 
     // Start is called before the first frame update

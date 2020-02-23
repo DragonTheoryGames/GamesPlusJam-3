@@ -29,9 +29,13 @@ public class ClickMove : MonoBehaviour
             
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
             {
-                destination.x = hit.point.x;
-                destination.y = 3;
-                destination.z = hit.point.z;
+                if (hit.transform.tag != "EventObject")
+                {
+                    destination.x = hit.point.x;
+                    destination.y = 3;
+                    destination.z = hit.point.z;
+                }
+                return;
             }
 
         }

@@ -17,6 +17,7 @@ public class CameraZoom : MonoBehaviour
 
     [SerializeField] Transform agent;
     Vector3 lastPos = new Vector3(0,0,0);
+    float lastTime = 0;
 
     void FixedUpdate() 
     {
@@ -31,15 +32,20 @@ public class CameraZoom : MonoBehaviour
 
     void AgentFocus()
     {
-        if (agent.position != lastPos && targets.Count < 3)
+        if ((Time.time - lastTime) > 1)
         {
-            targets.Add(agent);
-            lastPos = agent.position;
+            if (agent.position != lastPos && targets.Count < 3)
+            {
+                targets.Add(agent);
+                lastPos = agent.position;
+            }
+            else
+            {
+                targets.Remove(agent);
+            }
+            lastTime = Time.time;
         }
-        else
-        {
-            targets.Remove(agent);
-        }
+        
     }
 
     void MoveCam()

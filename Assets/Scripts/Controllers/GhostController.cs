@@ -12,6 +12,7 @@ public class GhostController : MonoBehaviour
     private float timer = 0.0f;
 
     [SerializeField] int mouseButton;
+    [SerializeField] float range;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,11 @@ public class GhostController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        Move();
+    }
+
+    void Move()
     {
         if (Input.GetMouseButton(mouseButton) && timer > inputFrequency)
         {

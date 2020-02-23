@@ -11,11 +11,9 @@ public class Keys : MonoBehaviour
         {
             keysLeft -= 1;
             Destroy(col.gameObject);
-            Debug.Log(keysLeft);
         }
         else if (col.gameObject.tag == "exit")
         {
-            Debug.Log(keysLeft);
             if (keysLeft <= 0)
             {
                 Debug.Log("Win");

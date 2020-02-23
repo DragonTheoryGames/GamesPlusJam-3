@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8586839393091936467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6959791547176148890, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: enter
+      value: 
+      objectReference: {fileID: 1710437015376867424}
+    - target: {fileID: 6959791547176148890, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: exit
+      value: 
+      objectReference: {fileID: 1710437016457461581}
+    - target: {fileID: 6959791547176148890, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: exitEnable
+      value: 
+      objectReference: {fileID: 1710437016331914941}
+    - target: {fileID: 6959791547176148890, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547176148890, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: yExitRotation
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.77263
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -64.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547273734118, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: m_Name
+      value: Positive Ninty Door Triggers Variant 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547335831146, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: exitEnableDisabled
+      value: 
+      objectReference: {fileID: 1710437016331914941}
+    - target: {fileID: 6959791547335831146, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: enterEnable
+      value: 
+      objectReference: {fileID: 1710437015376867424}
+    - target: {fileID: 6959791547335831146, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791547335831146, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: yExitRotation
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791548257325247, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: enter
+      value: 
+      objectReference: {fileID: 1710437015376867424}
+    - target: {fileID: 6959791548257325247, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: exit
+      value: 
+      objectReference: {fileID: 1710437016457461581}
+    - target: {fileID: 6959791548257325247, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791548257325247, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: yEnterRotation
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791548257325247, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: closeEnable
+      value: 
+      objectReference: {fileID: 1710437015251364469}
+    - target: {fileID: 6959791548383873701, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: closeDoorDisabled
+      value: 
+      objectReference: {fileID: 1710437015251364469}
+    - target: {fileID: 6959791548383873701, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: exitEnable
+      value: 
+      objectReference: {fileID: 1710437016457461581}
+    - target: {fileID: 6959791548383873701, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959791548383873701, guid: 386688d6db2f540368511af90574c9e6,
+        type: 3}
+      propertyPath: yEnterRotation
+      value: 60
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 386688d6db2f540368511af90574c9e6, type: 3}
+--- !u!1 &1710437015376867424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6959791548257325235, guid: 386688d6db2f540368511af90574c9e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8586839393091936467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1710437016457461581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6959791547176148894, guid: 386688d6db2f540368511af90574c9e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8586839393091936467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1710437015251364469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6959791548383873702, guid: 386688d6db2f540368511af90574c9e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8586839393091936467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1710437016331914941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6959791547335831150, guid: 386688d6db2f540368511af90574c9e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8586839393091936467}
+  m_PrefabAsset: {fileID: 0}

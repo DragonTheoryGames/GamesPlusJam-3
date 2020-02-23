@@ -23,6 +23,7 @@ public class Agent : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(1)) //Creates a Ping
             {  
+                Debug.Log("click");
                 navMeshAgent.SetDestination(npcTarget.transform.position);
                 Ray pingCast = Camera.main.ScreenPointToRay(Input.mousePosition);
 

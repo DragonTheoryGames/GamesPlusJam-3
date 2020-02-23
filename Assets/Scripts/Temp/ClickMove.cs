@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class ClickMove : MonoBehaviour
 {
 
+    [SerializeField] int mouseButton;
     public GameObject ghost;
     CapsuleCollider ghostCollider;
     public float moveDisPerSec = 1;
@@ -22,7 +23,7 @@ public class ClickMove : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(mouseButton))
         {
 
             RaycastHit hit;

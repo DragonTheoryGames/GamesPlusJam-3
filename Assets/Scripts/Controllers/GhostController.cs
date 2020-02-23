@@ -11,6 +11,8 @@ public class GhostController : MonoBehaviour
     private RaycastHit hitInfo;
     private float timer = 0.0f;
 
+    [SerializeField] int mouseButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class GhostController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0) && timer > inputFrequency)
+        if (Input.GetMouseButton(mouseButton) && timer > inputFrequency)
         {
             if (!agent.isStopped) agent.ResetPath();
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity)) agent.SetDestination(hitInfo.point);

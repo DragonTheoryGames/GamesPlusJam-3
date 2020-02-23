@@ -10,27 +10,30 @@ public class GhostController : MonoBehaviour
     private Camera cam;
     private RaycastHit hitInfo;
     private float timer = 0.0f;
-    public AudioSource evpSource;
 
     [SerializeField] int mouseButton;
+    [SerializeField] float range;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        evpSource = GetComponent<AudioSource>();
         cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Move();
+    }
+
+    void Move()
+    {
         if (Input.GetMouseButton(mouseButton) && timer > inputFrequency)
         {
             if (!agent.isStopped) agent.ResetPath();
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity)) agent.SetDestination(hitInfo.point);
             timer = 0.0f;
-            evpSource.Play();
         }
 
         timer += Time.deltaTime;

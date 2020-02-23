@@ -15,11 +15,37 @@ public class CameraZoom : MonoBehaviour
     [Tooltip("Minimum Camera distance from Player")]
     [SerializeField] float zoom;
 
+    [SerializeField] Transform agent;
+    Vector3 lastPos = new Vector3(0,0,0);
+    float lastTime = 0;
+
+    void FixedUpdate() 
+    {
+        AgentFocus();
+    }
 
     void LateUpdate() 
     {
         MoveCam();
         ZoomCam();
+    }
+
+    void AgentFocus()
+    {
+        if ((Time.time - lastTime) > 1)
+        {
+            if (agent.position != lastPos && targets.Count < 3)
+            {
+                targets.Add(agent);
+                lastPos = agent.position;
+            }
+            else
+            {
+                targets.Remove(agent);
+            }
+            lastTime = Time.time;
+        }
+        
     }
 
     void MoveCam()

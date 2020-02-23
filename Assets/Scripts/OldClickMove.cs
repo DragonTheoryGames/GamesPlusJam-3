@@ -16,12 +16,13 @@ public class OldClickMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        RaycastHit hitCast;
 
         if(Input.GetMouseButtonDown(0))
         {
+             Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit hitCast;
+            
             if(Physics.Raycast(rayCast, out hitCast, 100))
             {
                 ghostAgent.destination = hitCast.point;

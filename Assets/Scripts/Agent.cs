@@ -11,48 +11,38 @@ public class Agent : MonoBehaviour
     public NavMeshAgent navMeshAgent;   
     public GameObject ping;
     private GameObject nullTarget;
-    public Transform theAgent;
 
     // Start is called before the first frame update
     void Awake()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<NavMeshAgent>();    
     }
 
     // Update is called once per frame
     void Update()
     {
-        navMeshAgent.SetDestination(npcTarget.transform.position);
-        Ray pingCast = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //Ray agentCast = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if(Input.GetMouseButtonDown(1)) //Creates a Ping
+            {  
+                navMeshAgent.SetDestination(npcTarget.transform.position);
+                Ray pingCast = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        RaycastHit pingHitCast;
-        //RaycastHit agentHitCast;
+                RaycastHit pingHitCast;
 
-         if(Input.GetMouseButtonDown(1))
-            {
-                StartCoroutine(Timer());
                 if(Physics.Raycast(pingCast, out pingHitCast, 100))
                 {  
                     npcTemp = Instantiate(ping, pingHitCast.point, Quaternion.identity);
-                    npcTarget = npcTemp;
+                    npcTarget = npcTemp; //Sets the Agent target to the latest ping
                     
-                    Destroy(npcTemp, 3);
+                    Destroy(npcTemp, 3); //Destroys it after;
                     
                 }
-                StopCoroutine(Timer());
             }
+        
             else
             {
-                npcTarget = npcStatic;
+                 npcTarget = npcStatic; //Sets the Agent target back to the original, a placeholder of the prefab
             }
 
             
-    }
-
-    public IEnumerator Timer()
-    {
-        yield return new WaitForSecondsRealtime(10);
-        
     }
 }

@@ -11,11 +11,13 @@ public class EnterRoomM : MonoBehaviour
     public GameObject enter;
     public GameObject exit;
     public GameObject closeEnable;
+    public AudioSource doorCreek;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        doorCreek = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,7 +34,7 @@ public class EnterRoomM : MonoBehaviour
             enter.GetComponent<Collider>().enabled = false;
             exit.GetComponent<Collider>().enabled = false;
             door.transform.Rotate(0, yEnterRotation, 0);
-                
+            doorCreek.Play();    
               
                 
             //Turning off the collider to prevent the door from moving again until it is time

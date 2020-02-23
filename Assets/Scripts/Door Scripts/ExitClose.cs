@@ -11,12 +11,14 @@ public GameObject door;
     public bool negative;
     public GameObject enterEnable;
     public GameObject exitEnableDisabled;
+    public AudioSource doorCreek;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        doorCreek = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public GameObject door;
                     exitEnableDisabled.GetComponent<Collider>().enabled = false;
                     //Turning this back on
                     enterEnable.GetComponent<Collider>().enabled = true;
+                    doorCreek.Play();
         }      
     }
 }

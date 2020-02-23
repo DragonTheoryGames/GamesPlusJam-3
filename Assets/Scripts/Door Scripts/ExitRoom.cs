@@ -10,11 +10,13 @@ public class ExitRoom : MonoBehaviour
     public GameObject enter;
     public GameObject exit;
     public GameObject exitEnable;
+    public AudioSource doorCreek;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        doorCreek = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class ExitRoom : MonoBehaviour
 
             //Turning off the collider to prevent the door from moving again until it is time
             exitEnable.GetComponent<Collider>().enabled = true;
+            doorCreek.Play();
             
     }   
                

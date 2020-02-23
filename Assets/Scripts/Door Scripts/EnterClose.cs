@@ -12,12 +12,14 @@ public class EnterClose : MonoBehaviour
     public bool negative;
     public GameObject exitEnable;
     public GameObject closeDoorDisabled;
+    public AudioSource doorCreek;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        doorCreek = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class EnterClose : MonoBehaviour
             closeDoorDisabled.GetComponent<Collider>().enabled = false;
             //Turning this back on
             exitEnable.GetComponent<Collider>().enabled = true;
+            doorCreek.Play();
         }      
     }
 }

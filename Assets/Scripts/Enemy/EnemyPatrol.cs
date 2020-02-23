@@ -55,46 +55,40 @@ public class EnemyPatrol : MonoBehaviour
                 Debug.LogError("Failed to find waypoints in this scene. NEED WAYPOINTS. NOW!");
             }
         }
-        if (!behavior.targettingPlayer)
-        {
-            SetDestination();
-        } 
+
+        SetDestination();
     }
 
     public void Update()
     {
-        if (!behavior.targettingPlayer)
+        // Check if we're close to the destination
+        if (travelling && agent.remainingDistance <= 1.0f)
         {
-            // Check if we're close to the destination
-            if (travelling && agent.remainingDistance <= 1.0f)
-            {
-                travelling = false;
-                waypointsVisited++;
+            travelling = false;
+            waypointsVisited++;
 
-                if (patrolWaiting)
-                {
-                    waiting = true;
-                    waitTimer = 0f;
-                }
-                else
-                {
-                    SetDestination();
-                }
+            if (patrolWaiting)
+            {
+                waiting = true;
+                waitTimer = 0f;
             }
-
-            // Instead if we're waiting
-            if (waiting)
+            else
             {
-                waitTimer += Time.deltaTime;
-                if (waitTimer >= totalWaitTime)
-                {
-                    waiting = false;
-
-                    SetDestination();
-                }
+                SetDestination();
             }
         }
 
+        // Instead if we're waiting
+        if (waiting)
+        {
+            waitTimer += Time.deltaTime;
+            if (waitTimer >= totalWaitTime)
+            {
+                waiting = false;
+
+                SetDestination();
+            }
+        }
     }
 
     private void SetDestination()

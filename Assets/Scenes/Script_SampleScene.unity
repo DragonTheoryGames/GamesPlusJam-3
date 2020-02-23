@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 215127196}
   m_Layer: 0
   m_Name: Patrol Point (1)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
+  connectivityRadius: 50
 --- !u!1 &258422194
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +571,7 @@ GameObject:
   - component: {fileID: 395524454}
   m_Layer: 0
   m_Name: Patrol Point (2)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
+  connectivityRadius: 50
 --- !u!4 &395524455
 Transform:
   m_ObjectHideFlags: 0
@@ -846,7 +848,7 @@ GameObject:
   - component: {fileID: 809139325}
   m_Layer: 0
   m_Name: Patrol Point
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -878,6 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
+  connectivityRadius: 50
 --- !u!1 &1043487966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1171,7 @@ GameObject:
   - component: {fileID: 1851154168}
   - component: {fileID: 1851154163}
   - component: {fileID: 1851154169}
+  - component: {fileID: 1851154170}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1189,11 +1193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolWaiting: 0
   totalWaitTime: 3
-  switchProbability: 0.2
-  patrolPoints:
-  - {fileID: 809139325}
-  - {fileID: 215127196}
-  - {fileID: 395524454}
 --- !u!65 &1851154164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1282,6 +1281,7 @@ MonoBehaviour:
   NPC: {fileID: 1043487970}
   maxAngle: 45
   maxRadius: 10
+  isInFov: 0
 --- !u!195 &1851154169
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1304,6 +1304,19 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1851154170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851154162}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4e05ddf445f894fa471eef9823cead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targettingPlayer: 0
 --- !u!1 &1933567528
 GameObject:
   m_ObjectHideFlags: 0

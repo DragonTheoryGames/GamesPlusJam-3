@@ -8,6 +8,8 @@ TagManager:
   - EventObject
   - BorderWall
   - Waypoint
+  - key
+  - exit
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - GhostAgent
+  - Ghost
   - Ping
   - MainPost
   - Door

@@ -45,7 +45,6 @@ public class CameraZoom : MonoBehaviour
             }
             lastTime = Time.time;
         }
-        
     }
 
     void MoveCam()

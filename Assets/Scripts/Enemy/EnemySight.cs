@@ -9,7 +9,7 @@ public class EnemySight : MonoBehaviour
     public float maxAngle;
     public float maxRadius;
 
-    private bool isInFov = false;
+    public bool isInFov = false;
 
     private void Update()
     {

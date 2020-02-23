@@ -29,7 +29,7 @@ public class EnterClose : MonoBehaviour
 
     void OnTriggerEnter(Collider doorMove)
     {
-        if(doorMove.gameObject.name == "Ghost")
+        if(doorMove.gameObject.name == "Agent")
         {
                
             door.transform.Rotate(0, yEnterRotation, 0);

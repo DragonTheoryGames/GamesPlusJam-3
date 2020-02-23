@@ -27,7 +27,7 @@ public class EnterRoomM : MonoBehaviour
 
     void OnTriggerEnter(Collider doorMove)
     {
-        if(doorMove.gameObject.name == "Ghost")
+        if(doorMove.gameObject.name == "Agent")
         {
             enter.GetComponent<Collider>().enabled = false;
             exit.GetComponent<Collider>().enabled = false;

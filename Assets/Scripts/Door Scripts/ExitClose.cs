@@ -28,7 +28,7 @@ public GameObject door;
 
     void OnTriggerEnter(Collider doorMove)
     {
-        if(doorMove.gameObject.name == "Ghost")
+        if(doorMove.gameObject.name == "Agent")
         {
                     door.transform.Rotate(0, yExitRotation, 0);
                     exitEnableDisabled.GetComponent<Collider>().enabled = false;

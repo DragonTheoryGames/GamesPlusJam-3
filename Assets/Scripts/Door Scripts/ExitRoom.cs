@@ -26,7 +26,7 @@ public class ExitRoom : MonoBehaviour
 
     void OnTriggerEnter(Collider doorMove)
     {
-        if(doorMove.gameObject.name == "Ghost")
+        if(doorMove.gameObject.name == "Agent")
         {
             exit.GetComponent<Collider>().enabled = false;
             enter.GetComponent<Collider>().enabled = false;

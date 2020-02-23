@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 70862574}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,6 @@ Transform:
   - {fileID: 7692420839130671946}
   - {fileID: 6124317739044220561}
   - {fileID: 5413109587082989263}
-  - {fileID: 6913593722873890245}
   - {fileID: 6344314020788804234}
   - {fileID: 6482323467095020793}
   - {fileID: 1380849240805086948}
@@ -1730,7 +1729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2042501789}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1878,7 @@ GameObject:
   - component: {fileID: 8454913055968449328}
   - component: {fileID: 8488940499528636371}
   - component: {fileID: 6559145695548079579}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1912,7 +1911,7 @@ GameObject:
   - component: {fileID: 7391105026884898489}
   - component: {fileID: 8692537011364966298}
   - component: {fileID: 8965710318340446940}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1945,7 +1944,7 @@ GameObject:
   - component: {fileID: 7222563718530896619}
   - component: {fileID: 4484654906440163898}
   - component: {fileID: 3211167356982037335}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2067,7 +2066,7 @@ GameObject:
   - component: {fileID: 4218088891116307872}
   - component: {fileID: 4077972474010686129}
   - component: {fileID: 6544878503528655511}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2214,7 +2213,7 @@ GameObject:
   - component: {fileID: 2635333955747941901}
   - component: {fileID: 1332552232427171676}
   - component: {fileID: 6200949341142054768}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gate.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2328,7 +2327,7 @@ GameObject:
   - component: {fileID: 9066645238659518053}
   - component: {fileID: 6701556897589088669}
   - component: {fileID: 3864270849195798512}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmallDoor.R.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2423,7 +2422,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 70862574}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1423818085584824939
 Transform:
@@ -2451,7 +2450,7 @@ GameObject:
   - component: {fileID: 5360819520335285840}
   - component: {fileID: 3097012785884904156}
   - component: {fileID: 2186222958452282735}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2470,7 +2469,7 @@ GameObject:
   - component: {fileID: 3624851615390941740}
   - component: {fileID: 8830506817815920034}
   - component: {fileID: 3546713362342986917}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2497,7 +2496,7 @@ GameObject:
   - component: {fileID: 5013571115241220180}
   - component: {fileID: 2287978074981483894}
   - component: {fileID: 2543209615855047302}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmallDoor.L.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2690,7 +2689,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 70862574}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2743112649300063216
 Transform:
@@ -2898,7 +2897,7 @@ GameObject:
   - component: {fileID: 2538148528083047569}
   - component: {fileID: 5057222555880558815}
   - component: {fileID: 5379644779783603304}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +2916,7 @@ GameObject:
   - component: {fileID: 6297534379907066683}
   - component: {fileID: 7209949476067740609}
   - component: {fileID: 83213424003479108}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2958,7 +2957,7 @@ GameObject:
   - component: {fileID: 2131291046357075794}
   - component: {fileID: 2832745611451633335}
   - component: {fileID: 7434779121606278324}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3105,7 +3104,7 @@ GameObject:
   - component: {fileID: 669786165932372970}
   - component: {fileID: 5171045988540093879}
   - component: {fileID: 988509650206938198}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmallDoor.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3176,7 +3175,7 @@ GameObject:
   - component: {fileID: 8024045530481978420}
   - component: {fileID: 2871230762269407183}
   - component: {fileID: 4489752051844524707}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3409,7 +3408,7 @@ GameObject:
   - component: {fileID: 1724784585344460324}
   - component: {fileID: 6645979511156068445}
   - component: {fileID: 5149586343546035181}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3629,7 +3628,8 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 66.66667, y: 0, z: -27.651512}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 6913593722873890245}
   m_Father: {fileID: 70862574}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3659,7 +3659,7 @@ GameObject:
   - component: {fileID: 4356263370100561411}
   - component: {fileID: 8319502624159027314}
   - component: {fileID: 7616890305958290141}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3741,7 +3741,7 @@ GameObject:
   - component: {fileID: 909573283211932500}
   - component: {fileID: 3528036052961456674}
   - component: {fileID: 7106636265516385428}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gate.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3760,7 +3760,7 @@ GameObject:
   - component: {fileID: 7743781655498842138}
   - component: {fileID: 790965645021017156}
   - component: {fileID: 2337945005532603273}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3815,7 +3815,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 70862574}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6379812719962257030
 GameObject:
@@ -3829,7 +3829,7 @@ GameObject:
   - component: {fileID: 4624193490225833379}
   - component: {fileID: 6730591647139853529}
   - component: {fileID: 4241460901809068203}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3848,7 +3848,7 @@ GameObject:
   - component: {fileID: 952564433983773172}
   - component: {fileID: 2879743619718132459}
   - component: {fileID: 252919240436231470}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3881,7 +3881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 70862574}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6543471933326570629
 MeshFilter:
@@ -4076,7 +4076,7 @@ GameObject:
   - component: {fileID: 346243322543941252}
   - component: {fileID: 966731833474204697}
   - component: {fileID: 7534068824403391821}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmallDoor.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4090,12 +4090,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7064437621387674003}
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -15.151517, y: 0, z: -24.62121}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000008940697}
+  m_LocalPosition: {x: -3.0303097, y: 0, z: -81.81819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 70862574}
-  m_RootOrder: 11
+  m_Father: {fileID: 5413109587082989263}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6956007307636184677
 Transform:
@@ -4189,7 +4189,7 @@ GameObject:
   - component: {fileID: 3495153595685572445}
   - component: {fileID: 337516868612912291}
   - component: {fileID: 8840574909166300683}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4222,7 +4222,7 @@ GameObject:
   - component: {fileID: 4141302157418047220}
   - component: {fileID: 8441538704223785973}
   - component: {fileID: 6461658176050549648}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4538,7 +4538,7 @@ GameObject:
   - component: {fileID: 793986945003845296}
   - component: {fileID: 1182290086181106947}
   - component: {fileID: 3450240499209608119}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4573,7 +4573,7 @@ GameObject:
   - component: {fileID: 1084954691031399824}
   - component: {fileID: 5250516401574732644}
   - component: {fileID: 596147655045738468}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4630,7 +4630,7 @@ GameObject:
   - component: {fileID: 7229339842247097264}
   - component: {fileID: 7129594697704089387}
   - component: {fileID: 2661084208072473458}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4747,7 +4747,7 @@ GameObject:
   - component: {fileID: 6543471933326570629}
   - component: {fileID: 645181674808311976}
   - component: {fileID: 4413134373478484702}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4804,7 +4804,7 @@ GameObject:
   - component: {fileID: 7879148516526067902}
   - component: {fileID: 315955163901557652}
   - component: {fileID: 7725670608034702378}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}

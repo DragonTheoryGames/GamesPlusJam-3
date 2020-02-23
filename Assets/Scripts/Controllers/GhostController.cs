@@ -10,7 +10,6 @@ public class GhostController : MonoBehaviour
     private Camera cam;
     private RaycastHit hitInfo;
     private float timer = 0.0f;
-    public AudioSource evpSource;
 
     [SerializeField] int mouseButton;
 
@@ -18,7 +17,6 @@ public class GhostController : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        evpSource = GetComponent<AudioSource>();
         cam = Camera.main;
     }
 
@@ -30,7 +28,6 @@ public class GhostController : MonoBehaviour
             if (!agent.isStopped) agent.ResetPath();
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hitInfo, Mathf.Infinity)) agent.SetDestination(hitInfo.point);
             timer = 0.0f;
-            evpSource.Play();
         }
 
         timer += Time.deltaTime;

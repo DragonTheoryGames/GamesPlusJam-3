@@ -869,6 +869,133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &130598099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130598101}
+  - component: {fileID: 130598100}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &130598100
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130598099}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: dd64b7761fc0b8f44b917dc02e75bf7d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.05
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &130598101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130598099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 728.14996, y: 85.71158, z: 400.66574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141168774
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &142172741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1403,7 +1530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!4 &298774062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400010, guid: f47c3332cc1e27e429e62f14a27f814d,
@@ -1652,7 +1779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1 &378151503 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6959791548257325235, guid: 386688d6db2f540368511af90574c9e6,
@@ -2238,7 +2365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &458177696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2418,7 +2545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!4 &484377419
 Transform:
   m_ObjectHideFlags: 0
@@ -3008,7 +3135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &536400760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3569,7 +3696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1 &574621796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,7 +4164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &645614230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4235,7 +4362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!4 &679202655 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1052632072805121621, guid: f4c2c2ee2189f5e2984356306df86412,
@@ -4525,7 +4652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &732274831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4884,7 +5011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!4 &787405540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
@@ -5211,7 +5338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1 &869524150
 GameObject:
   m_ObjectHideFlags: 0
@@ -5541,7 +5668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &932392291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5661,7 +5788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!4 &943517252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1052632072805121621, guid: f4c2c2ee2189f5e2984356306df86412,
@@ -6458,7 +6585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &1081872495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7427,7 +7554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1 &1221874835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6959791547176148894, guid: 386688d6db2f540368511af90574c9e6,
@@ -8209,7 +8336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!4 &1371699583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6959791547273734117, guid: 386688d6db2f540368511af90574c9e6,
@@ -8790,7 +8917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &1472547350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9340,7 +9467,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 7
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1515331323
 MonoBehaviour:
@@ -9414,7 +9541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1 &1554715821 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5887844399723327224, guid: 677f74ba24c5f362298b2dceae7d414b,
@@ -10416,7 +10543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &1683840442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10733,7 +10860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &1700315300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10917,7 +11044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1001 &1714132001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11471,7 +11598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugDrawRadius: 1
-  connectivityRadius: 35
+  connectivityRadius: 60
 --- !u!1 &1871147591
 GameObject:
   m_ObjectHideFlags: 0

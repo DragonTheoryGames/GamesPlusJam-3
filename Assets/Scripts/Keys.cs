@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Keys : MonoBehaviour
 {
@@ -16,7 +17,12 @@ public class Keys : MonoBehaviour
         {
             if (keysLeft <= 0)
             {
+                SceneManager.LoadScene("MainMenu");
                 Debug.Log("Win");
+            }
+            else
+            {
+                SceneManager.LoadScene("MainMenu");
             }
         }
     }
